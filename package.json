@@ -4,7 +4,7 @@
   "description": "Personal web developer portfolio",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-sass": "node-sass -w scss/main.scss styles.css"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "eslint": "^7.6.0",
     "node-sass": "^4.14.1",
-    "stylelint": "^13.6.1"
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
