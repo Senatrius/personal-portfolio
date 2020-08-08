@@ -4,19 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+  <script src="https://kit.fontawesome.com/a33a0316b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <img src="resources/mwd_logo.svg" alt="Makutenas Web Development" class="logo">
       <nav class="full-menu">
-        <ul>
+        <ul class="full-menu__links">
           <li><a href="/">Skills</a></li>
           <li><a href="/">About</a></li>
           <li><a href="/">Projects</a></li>
           <li><a href="/">Contact</a></li>
         </ul>
-        <button class="hamburger-btn">=</button>
+        <button class="hamburger-btn" aria-pressed="false" aria-label="Toggle dropdown menu" aria-controls="dropdown-menu" aria-expanded="false"><i class="fas fa-bars fa-3x"></i></button>
+      </nav>
+      <nav id="dropdown-menu" class="dropdown-menu" aria-hidden="true">
+        <ul class="dropdown-menu__links">
+          <li><a href="/">Skills</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+        <hr>
+        <ul class="dropdown-menu__social">
+          <li><a href="/"><i class="fab fa-stack-overflow fa-3x social-icon"></i></a></li>
+          <li><a href="/"><i class="fab fa-codepen fa-3x social-icon"></i></a></li>
+          <li><a href="/"><i class="fab fa-github fa-3x social-icon"></i></a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -35,17 +53,17 @@
       <h2 class="section-title">My skills<span class="dot">.</span></h2>
       <div class="skills-list">
         <div class="skill">
-          <img src="resources/code-24px.svg" alt="" class="skill__icon">
-          <h3 class="skill__title">Clean code</h3>
+          <i class="fas fa-wheelchair fa-3x skill-icon"></i>
+          <h3 class="skill__title">Accessible</h3>
           <p class="skill__desc">Your website will be fully WCGC and ARIA compliant. All users will be able to easily access it, even if they use screen readers or other assistive technology.</p>
         </div>
         <div class="skill">
-          <img src="resources/devices-24px.svg" alt="" class="skill__icon">
+          <i class="fas fa-tablet-alt fa-3x skill-icon"></i>
           <h3 class="skill__title">Fully responsive</h3>
           <p class="skill__desc">Whether a visitor comes to your website using a phone or a 65’’ TV, they will have no trouble viewing all the content and accessing required information.</p>
         </div>
         <div class="skill">
-          <img src="resources/square_foot-24px.svg" alt="" class="skill__icon">
+          <i class="fas fa-pencil-ruler fa-3x skill-icon"></i>
           <h3 class="skill__title">Pixel perfect</h3>
           <p class="skill__desc">Following your provided design documents, I’ll make sure the website looks exactly as you intented at given sizes, no uneven padding or mismatched colors.</p>
         </div>

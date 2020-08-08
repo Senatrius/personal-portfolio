@@ -1,0 +1,44 @@
+/* Header Section */
+
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+
+  .container {
+    padding: 1.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: clamp(50px, 25vw, 100px);
+  }
+}
+
+.full-menu__links {
+  display: none;
+}
+
+.dropdown-menu[aria-hidden="true"] {
+  display: none;
+}
+
+.dropdown-menu[aria-hidden="false"] {
+  display: block;
+}
+
+@media (min-width: 767px) {
+  .full-menu__links {
+    display: flex;
+
+    & > li:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+}

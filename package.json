@@ -4,7 +4,7 @@
   "description": "Personal web developer portfolio",
   "main": "scripts.js",
   "scripts": {
-    "compile-sass": "node-sass -w scss/main.scss styles.css"
+    "compile-sass": "node-sass scss/main.scss styles.css"
   },
   "repository": {
     "type": "git",
