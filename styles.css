@@ -18,11 +18,12 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   color: #000;
-  font-size: 1.8rem; }
+  font-size: 1.6rem;
+  line-height: 1.5; }
 
 @media (min-width: 767px) {
   body {
-    font-size: 1.6rem; } }
+    font-size: 1.8rem; } }
 
 .container {
   width: 90%;
@@ -51,6 +52,18 @@ button {
     background-color: #1785d3; }
   .btn:active {
     background-color: #0d4b77; }
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4.8rem; }
+  .section-title .dot {
+    font-size: 5rem;
+    color: #1268a5; }
+
+@media (min-width: 767px) {
+  .section-title {
+    text-align: left; } }
 
 /* Header Section */
 .header {
@@ -97,6 +110,20 @@ button {
   .hero .desc {
     margin: 1.2rem 0 1.9rem 0; }
 
+/* Skills Section */
+.skills .container {
+  padding: 7rem 0; }
+
+.skills__list {
+  display: flex;
+  flex-direction: column; }
+
+.skill {
+  margin-bottom: 2.4rem; }
+  .skill__title {
+    margin: 0.9rem 0; }
+
+/* Media Queries */
 @media (min-width: 767px) {
   .full-menu__links {
     display: flex; }
@@ -113,4 +140,14 @@ button {
     font-size: 4.5rem; }
   .hero .desc {
     width: 45%;
-    margin: 1.4rem 0 2.2rem 0; } }
+    margin: 1.4rem 0 2.2rem 0; }
+  .skills__list {
+    flex-direction: row; }
+  .skills .container {
+    padding: 9rem 0; }
+  .skill {
+    margin-bottom: 0; }
+    .skill__title {
+      margin: 1.2rem 0; }
+    .skill:not(:last-child) {
+      margin-right: 3.5rem; } }
