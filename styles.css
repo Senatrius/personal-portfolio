@@ -9,18 +9,23 @@
 li {
   list-style: none; }
 
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit; }
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 62.5%;
-  color: #000; }
+  color: #000;
+  font-size: 1.8rem; }
+
+@media (min-width: 767px) {
+  body {
+    font-size: 1.6rem; } }
 
 .container {
-  width: 94%;
+  width: 90%;
   max-width: 1180px;
   height: 100%;
   margin: 0 auto; }
@@ -30,14 +35,18 @@ button {
   padding: 0;
   margin: 0;
   outline: 0;
+  background: none;
   border: none; }
 
 .btn {
-  padding: 0.8rem 1.4rem;
+  padding: 1.2rem 1.9rem;
   background-color: #1268a5;
   border: 0;
   outline: 0;
-  display: inline-block; }
+  display: inline-block;
+  font-weight: 600;
+  color: #fafafa;
+  transition: 0.15s background-color ease; }
   .btn:hover, .btn:focus {
     background-color: #1785d3; }
   .btn:active {
@@ -65,10 +74,43 @@ button {
 .dropdown-menu[aria-hidden="false"] {
   display: block; }
 
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("resources/hero-bg.jpg") no-repeat center 35%/cover; }
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .hero .name {
+    font-size: 1.9rem;
+    letter-spacing: 0.15rem;
+    font-weight: 600; }
+  .hero .title {
+    font-size: 3.4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1; }
+  .hero .desc {
+    margin: 1.2rem 0 1.9rem 0; }
+
 @media (min-width: 767px) {
   .full-menu__links {
     display: flex; }
     .full-menu__links > li:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 4.5rem; }
   .hamburger-btn {
-    display: none; } }
+    display: none; }
+  .hero .container {
+    align-items: flex-start;
+    text-align: left; }
+  .hero .name {
+    font-size: 2.4rem; }
+  .hero .title {
+    font-size: 4.5rem; }
+  .hero .desc {
+    width: 45%;
+    margin: 1.4rem 0 2.2rem 0; } }

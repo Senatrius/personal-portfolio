@@ -29,16 +29,70 @@
   display: block;
 }
 
+/* Hero Section */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('resources/hero-bg.jpg') no-repeat center 35%/cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 1.9rem;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 3.4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .desc {
+    margin: 1.2rem 0 1.9rem 0;
+  }
+}
+
 @media (min-width: 767px) {
   .full-menu__links {
     display: flex;
 
     & > li:not(:last-child) {
-      margin-right: 2rem;
+      margin-right: 4.5rem;
     }
   }
 
   .hamburger-btn {
     display: none;
+  }
+
+  .hero {
+    .container {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .name {
+      font-size: 2.4rem;
+
+    }
+  
+    .title {
+      font-size: 4.5rem;
+    }
+
+    .desc {
+      width: 45%;
+      margin: 1.4rem 0 2.2rem 0;
+    }
   }
 }
