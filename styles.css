@@ -73,6 +73,8 @@ button {
     justify-content: space-between;
     padding: 1.2rem;
     align-items: flex-start; }
+  .project__skills {
+    padding: 1.2rem 0; }
 
 @media (min-width: 767px) {
   .section-title {
@@ -111,6 +113,9 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center; }
+  .hero h1 {
+    display: flex;
+    flex-direction: column; }
   .hero .name {
     font-size: 1.9rem;
     letter-spacing: 0.15rem;
@@ -156,6 +161,27 @@ button {
   grid-template-rows: auto;
   gap: 1.2rem; }
 
+/* Contact Section */
+.contact {
+  color: #fafafa;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("resources/contact-bg.jpg") no-repeat center center/cover; }
+  .contact .container {
+    padding: 5.5rem 0 7rem 0; }
+  .contact__desc {
+    display: none; }
+  .contact__form {
+    display: flex;
+    flex-direction: column; }
+  .contact label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.5rem; }
+  .contact input {
+    padding: 0.4rem 0.8rem; }
+  .contact .form-btn {
+    margin-top: 1.2rem; }
+
 /* Media Queries */
 @media (min-width: 767px) {
   .full-menu__links {
@@ -188,4 +214,15 @@ button {
     padding: 7rem 0 9rem 0;
     text-align: left; }
   .projects .project-container {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .contact .contact-container {
+    display: flex;
+    flex-direction: row; }
+  .contact form {
+    flex: 1; }
+  .contact__desc {
+    display: block;
+    width: 40%;
+    padding-right: 2rem; }
+  .contact .form-btn {
+    align-self: flex-end; } }

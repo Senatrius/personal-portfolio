@@ -44,6 +44,11 @@
     text-align: center;
   }
 
+  h1 {
+    display: flex;
+    flex-direction: column;
+  }
+
   .name {
     font-size: 1.9rem;
     letter-spacing: 0.15rem;
@@ -114,6 +119,41 @@
   }
 }
 
+/* Contact Section */
+
+.contact {
+  color: $light;
+  background: linear-gradient($overlay, $overlay), url('resources/contact-bg.jpg') no-repeat center center/cover;
+
+  .container {
+    padding: 5.5rem 0 7rem 0;
+  }
+
+  &__desc {
+    display: none;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .form-btn {
+    margin-top: 1.2rem;
+  }
+}
+
 /* Media Queries */
 
 @media (min-width: 767px) {
@@ -181,6 +221,27 @@
   .projects {
     .project-container {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .contact {
+    .contact-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    form {
+      flex: 1;
+    }
+
+    &__desc {
+      display: block;
+      width: 40%;
+      padding-right: 2rem;
+    }
+
+    .form-btn {
+      align-self: flex-end;
     }
   }
 }

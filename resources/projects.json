@@ -1,20 +1,20 @@
 [
   {
-    "title": "First project title",
+    "title": "First project title, placeholder number 1",
     "title-full": "First project title for Business LLC",
     "stack": ["HTML", "CSS", "JS", "SCSS"],
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rerum et neque fuga nostrum facilis ullam quisquam sequi laboriosam adipisci?",
-    "thumbnail": "https://picsum.photos/200/140",
+    "thumbnail": "https://picsum.photos/160/140",
     "preview": "https://picsum.photos/800/1200",
     "repo": null,
     "live": null
   },
   {
-    "title": "Second project title",
+    "title": "Second project title, a longer title to test out how it handles the layout",
     "title-full": "Second project title for Business LLC",
     "stack": ["HTML", "CSS", "JS", "SCSS"],
     "description": "Ex fugit nisi accusamus perspiciatis excepturi tenetur quasi dicta. Quisquam quae deserunt at ad aspernatur ullam quas, pariatur neque eligendi.",
-    "thumbnail": "https://picsum.photos/200/140",
+    "thumbnail": "https://picsum.photos/160/140",
     "preview": "https://picsum.photos/800/1200",
     "repo": null,
     "live": null
@@ -24,7 +24,7 @@
     "title-full": "Third project title for Business LLC",
     "stack": ["HTML", "CSS", "JS", "SCSS"],
     "description": "Accusamus, voluptas repellendus! Rerum sapiente autem praesentium vero cumque quis ipsa doloribus rem asperiores. Dolore corporis suscipit impedit dignissimos tempora!",
-    "thumbnail": "https://picsum.photos/200/140",
+    "thumbnail": "https://picsum.photos/160/140",
     "preview": "https://picsum.photos/800/1200",
     "repo": null,
     "live": null
@@ -34,7 +34,7 @@
     "title-full": "Fourth project title for Business LLC",
     "stack": ["HTML", "CSS", "JS", "SCSS"],
     "description": "Quidem nostrum, similique praesentium repudiandae nam vel tenetur nemo asperiores. Minus nam optio, amet numquam aliquid eaque repudiandae laudantium tempora.",
-    "thumbnail": "https://picsum.photos/200/140",
+    "thumbnail": "https://picsum.photos/160/140",
     "preview": "https://picsum.photos/800/1200",
     "repo": null,
     "live": null
@@ -44,7 +44,7 @@
     "title-full": "Fifth project title for Business LLC",
     "stack": ["HTML", "CSS", "JS", "SCSS"],
     "description": "Cum nemo impedit quasi quis voluptatem sit sapiente placeat vero doloremque, esse illo doloribus cumque officia, eveniet dolorem? Tempora, architecto!",
-    "thumbnail": "https://picsum.photos/200/140",
+    "thumbnail": "https://picsum.photos/160/140",
     "preview": "https://picsum.photos/800/1200",
     "repo": null,
     "live": null

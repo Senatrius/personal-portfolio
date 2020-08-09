@@ -23,7 +23,7 @@ async function populateProjects() {
       <div class="project__summary">
         <h3 class="project__title">${project.title}</h3>
         <p class="project__skills">${stack}</p>
-        <button class="btn">Learn more</button>
+        <button class="btn">Learn More</button>
       </div>
     </div>
     `
